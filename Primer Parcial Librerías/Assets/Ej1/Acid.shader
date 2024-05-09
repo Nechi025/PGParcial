@@ -151,24 +151,24 @@ Shader "Acid"
 }
 /*ASEBEGIN
 Version=17200
-0;539;1465;452;1664.553;363.3634;1.3;True;False
+0;540;1465;451;2230.786;263.2917;1.679836;True;False
 Node;AmplifyShaderEditor.SimpleTimeNode;12;-1162.753,217.7365;Inherit;False;1;0;FLOAT;0.01;False;1;FLOAT;0
-Node;AmplifyShaderEditor.RangedFloatNode;7;-834.913,303.8851;Inherit;False;Property;_NoiseScale;NoiseScale;5;0;Create;True;0;0;False;0;1;4;0;0;0;1;FLOAT;0
-Node;AmplifyShaderEditor.TextureCoordinatesNode;11;-898.1517,167.2773;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.PosVertexDataNode;10;-730.3309,-162.4543;Inherit;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.GradientNode;8;-706.6489,-239.3262;Inherit;False;0;2;2;0.2980392,1,0,0.1088273;0.007843138,0.3882353,0,1;1,0;1,1;0;1;OBJECT;0
-Node;AmplifyShaderEditor.ColorNode;2;-984.0954,-416.2411;Inherit;False;Constant;_Color0;Color 0;0;0;Create;True;0;0;False;0;0.2962477,1,0,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.ColorNode;3;-986.5445,-232.1732;Inherit;False;Constant;_Color1;Color 1;0;0;Create;True;0;0;False;0;0.009747681,0.3867925,0,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.TextureCoordinatesNode;11;-898.1517,167.2773;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.RangedFloatNode;7;-834.913,303.8851;Inherit;False;Property;_NoiseScale;NoiseScale;5;0;Create;True;0;0;False;0;1;4;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.PosVertexDataNode;15;-696.605,-148.8545;Inherit;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.GradientSampleNode;9;-463.3309,-241.4543;Inherit;True;2;0;OBJECT;0;False;1;FLOAT;0;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.ColorNode;2;-1552.769,-420.7188;Inherit;False;Constant;_Color0;Color 0;0;0;Create;True;0;0;False;0;0.2962477,1,0,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.ColorNode;3;-1555.218,-236.6509;Inherit;False;Constant;_Color1;Color 1;0;0;Create;True;0;0;False;0;0.009747681,0.3867925,0,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.NoiseGeneratorNode;4;-652.6171,221.7064;Inherit;True;Simplex2D;True;False;2;0;FLOAT2;0,0;False;1;FLOAT;1;False;1;FLOAT;0
-Node;AmplifyShaderEditor.WorldPosInputsNode;1;-977.6495,-33.12812;Inherit;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
+Node;AmplifyShaderEditor.WorldPosInputsNode;1;-1535.831,-44.27713;Inherit;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;0,0;Float;False;True;6;ASEMaterialInspector;0;0;Standard;Acid;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;Back;0;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Opaque;0.5;True;True;0;False;Opaque;;Geometry;All;14;all;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;True;2;15;10;25;False;0.5;True;0;0;False;-1;0;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;Relative;0;;-1;-1;-1;0;0;False;0;0;False;-1;-1;0;False;-1;0;0;0;False;0.1;False;-1;0;False;-1;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
 WireConnection;11;1;12;0
 WireConnection;9;0;8;0
-WireConnection;9;1;10;2
+WireConnection;9;1;15;2
 WireConnection;4;0;11;0
 WireConnection;4;1;7;0
 WireConnection;0;2;9;0
 WireConnection;0;11;4;0
 ASEEND*/
-//CHKSM=9A2BDCEA1627486395830364CF18A1445EFCAD7F
+//CHKSM=34B44142811077774B0C12E8FADA01D5606DC2F8
