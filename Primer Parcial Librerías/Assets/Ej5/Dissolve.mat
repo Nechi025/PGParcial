@@ -67,7 +67,7 @@ Material:
     m_Floats:
     - _Cutoff: 0.5
     - _Direction: 3
-    - _Dissolve: 0.352
+    - _Dissolve: 0.334
     - _DissolveAmount: -0.5
     - _EdgeWidth: 0.03
     - _Float0: -0.1
