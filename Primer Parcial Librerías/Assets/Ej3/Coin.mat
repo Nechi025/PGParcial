@@ -33,13 +33,14 @@ Material:
     - _Ciclos1: -97.31
     - _FlashWidth: 0.319276
     - _Float0: 3.88
+    - _Float1: 3
     - _Freq: 1
     - _Frequency: 0.25
     - _MetalSmoth: 1
     - _Metallic: 0.5
     - _Smoothness: 0.85
     - _Speed: 5
-    - __dirty: 1
+    - __dirty: 0
     m_Colors:
     - _Color0: {r: 0.91372555, g: 0.63529414, b: 0.2392157, a: 1}
     - _Color2: {r: 0.9245283, g: 0.885181, b: 0.082858644, a: 0}
