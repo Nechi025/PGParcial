@@ -78,8 +78,8 @@ Shader "Acid"
 		{
 			float4 color2 = IsGammaSpace() ? float4(0.2962477,1,0,0) : float4(0.07139479,1,0,0);
 			float4 color3 = IsGammaSpace() ? float4(0.009747681,0.3867925,0,0) : float4(0.0007544645,0.1237993,0,0);
-			float3 ase_worldPos = i.worldPos;
-			float4 lerpResult16 = lerp( color2 , color3 , ase_worldPos.y);
+			float3 ase_vertex3Pos = mul( unity_WorldToObject, float4( i.worldPos , 1 ) );
+			float4 lerpResult16 = lerp( color2 , color3 , ase_vertex3Pos.y);
 			o.Emission = lerpResult16.rgb;
 			o.Metallic = 1.0;
 			o.Alpha = 1;
@@ -92,7 +92,7 @@ Shader "Acid"
 }
 /*ASEBEGIN
 Version=17200
-0;539;1465;452;1894.159;337.0081;1.571928;True;False
+0;367.2;1171;456.2;2306.501;475.925;2.077231;True;False
 Node;AmplifyShaderEditor.SimpleTimeNode;12;-1075.88,210.6927;Inherit;False;1;0;FLOAT;0.01;False;1;FLOAT;0
 Node;AmplifyShaderEditor.TextureCoordinatesNode;11;-811.278,160.2335;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.RangedFloatNode;7;-748.0394,296.8414;Inherit;False;Property;_NoiseScale;NoiseScale;5;0;Create;True;0;0;False;0;1;6;0;0;0;1;FLOAT;0
@@ -100,8 +100,8 @@ Node;AmplifyShaderEditor.ColorNode;2;-883.9772,-415.6942;Inherit;False;Constant;
 Node;AmplifyShaderEditor.ColorNode;3;-886.4261,-231.6262;Inherit;False;Constant;_Color1;Color 1;0;0;Create;True;0;0;False;0;0.009747681,0.3867925,0,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.NoiseGeneratorNode;4;-565.7438,216.0585;Inherit;True;Simplex2D;True;False;2;0;FLOAT2;0,0;False;1;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.Vector3Node;21;-529.4796,455.8488;Inherit;False;Constant;_Vector0;Vector 0;2;0;Create;True;0;0;False;0;0,0.5,0;0,0,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
-Node;AmplifyShaderEditor.WorldPosInputsNode;1;-867.0392,-41.34728;Inherit;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.PosVertexDataNode;22;-694.7785,-28.91026;Inherit;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.WorldPosInputsNode;1;-867.0392,-41.34728;Inherit;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.LerpOp;16;-438.342,-241.0951;Inherit;True;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;FLOAT;0;False;1;COLOR;0
 Node;AmplifyShaderEditor.RangedFloatNode;18;-196.0413,66.85081;Inherit;False;Constant;_Float0;Float 0;2;0;Create;True;0;0;False;0;1;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;19;-196.4796,283.8489;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0
@@ -111,11 +111,11 @@ WireConnection;4;0;11;0
 WireConnection;4;1;7;0
 WireConnection;16;0;2;0
 WireConnection;16;1;3;0
-WireConnection;16;2;1;2
+WireConnection;16;2;22;2
 WireConnection;19;0;4;0
 WireConnection;19;1;21;0
 WireConnection;0;2;16;0
 WireConnection;0;3;18;0
 WireConnection;0;11;19;0
 ASEEND*/
-//CHKSM=882A499554ADFE782E7054EF34DD7B3AD69734EC
+//CHKSM=EE62661D2AEAEDAF81CFE7D0499FC0D67AC712C2
