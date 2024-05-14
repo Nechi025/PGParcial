@@ -13,7 +13,7 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -67,13 +67,14 @@ Material:
     m_Floats:
     - _Cutoff: 0.5
     - _Direction: 3
-    - _Dissolve: 0.334
+    - _Dissolve: 0.714
     - _DissolveAmount: -0.5
     - _EdgeWidth: 0.03
-    - _Float0: -0.1
+    - _Float0: 0.9
     - _Float1: -0.2
     - _Float2: 0.05
-    - _GradientDis: 1
+    - _GradientDis: 0.7
+    - _GradientDis1: 1
     - _NoiseScale: 2.81
     - _NoiseScale1: 12.61
     - _Speed: 1
@@ -84,8 +85,11 @@ Material:
     - _TransScattering: 2
     - _TransShadow: 0.9
     - _Translucency: 1
-    - __dirty: 1
+    - __dirty: 0
+    - _aaaa: 0.684
+    - _s: 0.09
     m_Colors:
     - _Color0: {r: 1, g: 0, b: 0, a: 0}
+    - _Color1: {r: 1, g: 0.0936263, b: 0, a: 0}
     - _ColorDissolve: {r: 0.9811321, g: 0.64299023, b: 0.06941971, a: 0}
   m_BuildTextureStacks: []
