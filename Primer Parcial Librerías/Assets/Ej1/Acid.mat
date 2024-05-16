@@ -34,7 +34,7 @@ Material:
     - _Ciclos: -15.6
     - _Ciclos1: 59.15
     - _EdgeLength: 15
-    - _NoiseScale: 0.5
+    - _NoiseScale: 6
     - _Speed: 5
     - _Speed1: 1
     - _TessValue: 15
